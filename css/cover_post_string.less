@@ -1,0 +1,98 @@
+@width_photos_content:900px; //**ширина блока с фотографией 
+@height_photos_content:500px;//** высота блока с фотографией 
+@color_photos_opacity:rgba(82, 81, 80, 0.59); //**затемнение фотографии
+@information_bar:170px; //**Высота комментариев и даты
+.cover_post{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 130px ;
+}
+.sorting{
+	display: none;
+	width: 100%;
+	height: 40px;
+	box-sizing:border-box;
+	padding: 10px 50px;
+		span{
+			display: list-item;
+			list-style: none;
+			width: 16px;
+			height: 16px;
+			float: right;
+			margin: 0 5px;
+			
+			&:nth-child(1){
+
+				background-image: url("../image/catalog-view.svg");
+				background-repeat: no-repeat;
+				
+			}
+			&:nth-child(2){
+				background-image: url("../image/catalog-view.svg");
+				background-repeat: no-repeat;
+				background-position: -34px 1px;
+			}
+		}
+}
+.photos-content{
+	position: relative;
+	width: @width_photos_content;
+	height: @height_photos_content;
+	font-size: 0;
+	margin: 0 auto 55px auto;
+	>.mask{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color:@color_photos_opacity ;
+		opacity: ;
+		a{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+		>.tooltip{
+			position: relative;
+			text-align: center;
+			top: 50%;
+			cursor: pointer;
+			h2 a{
+				position: relative;
+				font-size: 25px;	
+				font-family: Arial;
+				font-weight: 600;
+				color: #FFF;
+				#new_comment{
+					width: 36px;
+					height: 36px;
+					float: left;
+					margin: @information_bar  0 0 20px ;
+					font-size: 16px;
+					background-image: url("../painting/ic_comment_white_36px.svg");
+					background-repeat: no-repeat;
+
+				}
+				#new_comment_counter{
+					float: left;
+					width: 36px;
+					height: 36px;
+					margin: @information_bar+10  0 0 0;
+					font-size: 16px;
+				}
+				#new_date{
+					float: right;
+					margin: @information_bar 20px 0 0;
+					font-size: 16px;
+					line-height: 2;
+				}
+			}
+		}
+	}
+}

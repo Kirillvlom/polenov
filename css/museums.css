@@ -1,0 +1,34 @@
+.content_museums {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 130px;
+}
+.info_location {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+.info_location h1 {
+  font: 26px/20px Arial;
+}
+.content_museums_center {
+  padding: 20px 16px;
+  height: 2000px;
+  margin-bottom: 40px;
+}
+.content_museums_center .col {
+  width: 25%;
+  height: auto;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.content_museums_center img {
+  border-radius: 10px;
+}
+.content_museums_center img:hover {
+  -webkit-border-radius: 10px;
+  box-shadow: 0px 1.5px 8px 0px rgba(0, 0, 0, 0.64);
+}
