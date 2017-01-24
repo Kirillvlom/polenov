@@ -5,3 +5,4 @@
 -   generates_number_of_players($id_user) - генерирует случайное число для пользователя, и заносить число в бд
 -   get_int_post_user() - получает число от пользователя.
 -   addition_int($id_int_game_user, $ints_user, $id_user, $cow, $bull) - сохраняет информацию о ходах игрока в бд, где $id_int_game_user - индетификаток попытки угадывания, $ints_user - число которое ввел пользователь, $cow - количество коров, $bull - количество быков
+-   bull($user_int_random, $int_user) - считает колличество быков, где $user_int_random - загаданное число,  $int_user - число которое ввел пользователь.
